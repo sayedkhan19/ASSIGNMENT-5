@@ -3,11 +3,6 @@ const dateContainer = document.getElementById('DateContainer');
 const currentDate = new Date();
 const formattedDate = currentDate.toDateString();
 dateContainer.textContent = formattedDate;
-// time
-// const now = new Date();
-// const timeNow = now.toLocaleTimeString();
-//button click add and minus 
-
 const mycontainer = document.getElementById('container');
  
 document.getElementById('btn-1')
@@ -58,7 +53,7 @@ document.getElementById('btn-2')
             p.classList.add("bg-[#F4F7FF]", "py-2", "rounded-md","px-2");
             const now = new Date();
             const timeNow = now.toLocaleTimeString();
-            p.innerText = `You have Complete The Task Add Dark Mode at ${timeNow}`;
+            p.innerText = `You have Completed The Task Add pay success Modal at ${timeNow}`;
             mycontainer.appendChild(p);
             const mybtn = document.getElementById('btn-2');
             mybtn.setAttribute('disabled', true);
@@ -84,7 +79,7 @@ document.getElementById('btn-3')
             p.classList.add("bg-[#F4F7FF]", "py-2", "rounded-md","px-2");
             const now = new Date();
             const timeNow = now.toLocaleTimeString();
-            p.innerText = `You have Complete The Task Add Dark Mode at ${timeNow}`;
+            p.innerText = `You have Complete The Task Add Optimize  Home page at ${timeNow}`;
             mycontainer.appendChild(p);
             const mybtn = document.getElementById('btn-3');
             mybtn.setAttribute('disabled', true);
@@ -110,7 +105,7 @@ document.getElementById('btn-4')
             p.classList.add("bg-[#F4F7FF]", "py-2", "rounded-md","px-2");
             const now = new Date();
             const timeNow = now.toLocaleTimeString();
-            p.innerText = `You have Complete The Task Add Dark Mode at ${timeNow}`;
+            p.innerText = `You have Complete The Task Add Add new emoji 🤲 at ${timeNow}`;
             mycontainer.appendChild(p);
             const mybtn = document.getElementById('btn-4');
             mybtn.setAttribute('disabled', true);
@@ -137,7 +132,7 @@ document.getElementById('btn-5')
             p.classList.add("bg-[#F4F7FF]", "py-2", "rounded-md","px-2");
             const now = new Date();
             const timeNow = now.toLocaleTimeString(); 
-            p.innerText = `You have Complete The Task Add Dark Mode at ${timeNow}`;
+            p.innerText = `You have Complete The Task Add Integrate OpenAI API at ${timeNow}`;
             mycontainer.appendChild(p);
             const mybtn = document.getElementById('btn-5');
             mybtn.setAttribute('disabled', true);
@@ -164,7 +159,7 @@ document.getElementById('btn-6')
             p.classList.add("bg-[#F4F7FF]", "py-2", "rounded-md","px-2");
             const now = new Date();
             const timeNow = now.toLocaleTimeString();
-            p.innerText = `You have Complete The Task Add Dark Mode at ${timeNow}`;
+            p.innerText = `You have Complete The Task Add Improve Job searching at ${timeNow}`;
             mycontainer.appendChild(p);
             const mybtn = document.getElementById('btn-6');
             mybtn.setAttribute('disabled', true);
@@ -174,4 +169,10 @@ document.getElementById('btn-6')
 document.getElementById('btn-clear-history')
 .addEventListener('click', function(event){
     mycontainer.innerHTML = "";
+})
+
+// /new page
+document.getElementById("new-page")
+.addEventListener('click', function(){
+    window.location.href = "secondFile.html";
 })
