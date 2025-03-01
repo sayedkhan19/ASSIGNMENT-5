@@ -10,16 +10,177 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#F4F7FF]">
-    <!-- header -->
-     <header class="flex flex-row justify-between mx-14 w-11/12">
+<body class="bg-[#F4F7FF] pt-4">
+    
+        <!-- header -->
+     <header class="flex flex-row justify-between w-11/12 mx-auto mb-3 bg-white border rounded-md ">
         <!-- left header -->
-        <div class="flex flex-row gap-3 items-center justify-center p-4">
+        <div class="flex flex-row items-center justify-center gap-3 p-4">
            <img src="assets/logo.png" alt="">
            <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
         </div>
         <!-- right header -->
-         <div></div>
+         <div class="flex flex-row items-center justify-center gap-8 p-4">
+             <div class="flex flex-row gap-2 text-3xl">
+                <img src="assets/checkbox.png" alt="">
+                <h1 class="font-bold" id="num-23">23</h1>
+             </div>
+             <img src="assets/theme-btn.png" alt="">
+         </div>
      </header>
+
+     <!-- main -->
+      <main class="flex flex-row mt-3 bg-white">
+        <!-- left section -->
+         <section class="w-11/12 mt-3 ml-6 border">
+            <!-- top div container -->
+             <div class="flex flex-row gap-5">
+                <!-- top let -->
+                 <div class="flex flex-row gap-2 w-3/12 p-4 bg-[#F4F7FF] border rounded-md ml-8 items-center">
+                   <img class="w-1/6 h-3/6" src="assets/checkbox.png" alt="">
+                   <div class="flex flex-col">
+                         <h3>Task Assignd</h3>
+                         <h2 id="number-6" class="text-2xl font-bold">6</h2>
+                   </div>
+                 </div>
+                 <!-- top middle -->
+                  <div class="w-4/12 p-3 bg-[#8797F9] rounded-md flex justify-center gap-4 items-center">
+                        <img src="assets/board.png" alt="">
+                        <h2 class="text-white">Discover Something <br> New Today!</h2>
+                  </div>
+                  <!-- top right -->
+                   <div class="w-3/12 bg-[#F4F7FF] rounded-md p-3 flex flex-row gap-3 justify-center items-center">
+                    <img src="assets/calender.png" alt="">
+                      <h1 id="DateContainer" class="text-xl font-bold"></h1>
+                   </div>
+
+             </div>
+
+             
+             <!-- section 6 div -->
+              <section class="grid grid-cols-3 gap-3">
+                <!-- card 1 -->
+                 <div class="bg-[#F4F7FF] rounded-md mt-3 p-4">
+                       <h3 class="w-6/12 p-3 text-xl text-center bg-white rounded-md">ShopEase</h3>
+                       <h1 class="my-4 text-3xl ">Fix Mobile Button Issue </h1>
+                       <p class="p-3 py-8 text-gray-500 bg-white rounded-md">Debug using Chrome DevTools, check for overlapping</p>
+                       <!-- card last div -->
+                        <div class="flex flex-row items-center justify-between mt-3">
+                            <div>
+                                <h5 class="text-gray-500">Deadline</h5>
+                                <h1 class="text-xl font-bold">21 March 2525</h1>
+                            </div>
+                            <button id="btn-1" class="px-3 py-2 text-white bg-blue-600 btn ">Completed</button>
+
+                        </div>
+
+                 </div>
+
+                 <!-- card 2 -->
+                 <div class="bg-[#F4F7FF] rounded-md mt-3 p-4">
+                    <h3 class="w-6/12 p-3 text-xl text-center bg-white rounded-md">CloudSync</h3>
+                    <h1 class="my-4 text-3xl ">Add Dark Mode </h1>
+                    <p class="p-3 py-8 text-gray-500 bg-white rounded-md">Store the user's preference in localStorage, update CSS varia</p>
+                    <!-- card last div -->
+                     <div class="flex flex-row items-center justify-between mt-3">
+                         <div>
+                             <h5  class="text-gray-500">Deadline</h5>
+                             <h1 class="text-xl font-bold">21 March 2525</h1>
+                         </div>
+                         <button id="btn-2" class="px-3 py-2 text-white bg-blue-600 btn ">Completed</button>
+
+                     </div>
+
+              </div>
+
+              <!-- card 3 -->
+              <div class="bg-[#F4F7FF] rounded-md mt-3 p-4">
+                <h3 class="w-6/12 p-3 text-xl text-center bg-white rounded-md">SwiftPay</h3>
+                <h1 class="my-4 text-3xl ">Optimize  Home page  </h1>
+                <p class="p-3 py-8 text-gray-500 bg-white rounded-md">Debug using Chrome DevTools, check for overlappin</p>
+                <!-- card last div -->
+                 <div class="flex flex-row items-center justify-between mt-3">
+                     <div>
+                         <h5  class="text-gray-500">Deadline</h5>
+                         <h1 class="text-xl font-bold">21 March 2525</h1>
+                     </div>
+                     <button class="px-3 py-2 text-white bg-blue-600 btn ">Completed</button>
+
+                 </div>
+
+          </div>
+
+          <!-- card 4 -->
+          <div class="bg-[#F4F7FF] rounded-md mt-3 p-4">
+            <h3 class="w-6/12 p-3 text-xl text-center bg-white rounded-md">Meta</h3>
+            <h1 class="my-4 text-3xl ">Add new emoji 🤲</h1>
+            <p class="p-3 py-8 text-gray-500 bg-white rounded-md">Debug using Chrome DevTools, check for overlappin</p>
+            <!-- card last div -->
+             <div class="flex flex-row items-center justify-between mt-3">
+                 <div>
+                     <h5  class="text-gray-500">Deadline</h5>
+                     <h1 class="text-xl font-bold">21 March 2525</h1>
+                 </div>
+                 <button class="px-3 py-2 text-white bg-blue-600 btn ">Completed</button>
+
+             </div>
+
+      </div>
+
+      <!-- card 5 -->
+      <div class="bg-[#F4F7FF] rounded-md mt-3 p-4">
+        <h3 class="w-6/12 p-3 text-xl text-center bg-white rounded-md">Google LLC</h3>
+        <h1 class="my-4 text-3xl ">Integrate OpenAI API </h1>
+        <p class="p-3 py-8 text-gray-500 bg-white rounded-md">Debug using Chrome DevTools, check for overlapping</p>
+        <!-- card last div -->
+         <div class="flex flex-row items-center justify-between mt-3">
+             <div>
+                 <h5  class="text-gray-500">Deadline</h5>
+                 <h1 class="text-xl font-bold">21 March 2525</h1>
+             </div>
+             <button class="px-3 py-2 text-white bg-blue-600 btn ">Completed</button>
+
+         </div>
+
+  </div>
+
+  <!-- card 6 -->
+  <div class="bg-[#F4F7FF] rounded-md mt-3 p-4">
+    <h3 class="w-6/12 p-3 text-xl text-center bg-white rounded-md">Glassdoar</h3>
+    <h1 class="my-4 text-3xl ">Improve Job searching </h1>
+    <p class="p-3 py-8 text-gray-500 bg-white rounded-md">Debug using Chrome DevTools, check for overlapping</p>
+    <!-- card last div -->
+     <div class="flex flex-row items-center justify-between mt-3">
+         <div>
+             <h5  class="text-gray-500">Deadline</h5>
+             <h1 class="text-xl font-bold">21 March 2525</h1>
+         </div>
+         <button class="px-3 py-2 text-white bg-blue-600 btn ">Completed</button>
+
+     </div>
+
+</div>
+              </section>
+           
+         </section>
+         <!-- right section -->
+          <section class="w-2/12 max-h-full mt-3 ml-2 mr-5 text-center bg-white border rounded-md ">
+        
+            <div class="flex flex-row justify-center gap-3 py-3 "> 
+                <img class="" src="assets/activity.png" alt="">
+                <h1 class="">Activity Log</h1>
+                </div>
+                <button id="btn-clear-history" class="px-3 py-2 text-white bg-blue-600 btn">Clear History</button>
+
+                <h3 class="my-3 border-b-2 border-dotted"></h3>
+          <div id="container" class="flex flex-col gap-3 p-3">
+   
+          </div>
+          </section>
+      </main>
+     </section>
+     <!--  -->
+     <script src="main.js"></script>
 </body>
+
 </html>
