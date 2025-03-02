@@ -1,9 +1,18 @@
+
+
 //date code
 const dateContainer = document.getElementById('DateContainer');
 const currentDate = new Date();
 const formattedDate = currentDate.toDateString();
 dateContainer.textContent = formattedDate;
 const mycontainer = document.getElementById('container');
+///
+function checkIfZero() {
+    const number = parseInt(document.getElementById('number-6').innerText);
+    if (number === 0) {
+        alert("Congratulations! You have completed all tasks.");
+    }
+}
  //btn1
 document.getElementById('btn-1')
 .addEventListener('click', function(event){
@@ -31,7 +40,16 @@ document.getElementById('btn-1')
             mybtn.setAttribute('disabled', true);
             mybtn.classList.add('bg-blue-200', "text-gray-300");
 
+            checkIfZero();
+            
+
         })
+        function checkIfZero() {
+            const number = parseInt(document.getElementById('number-6').innerText);
+            if (number === 0) {
+                alert("Congratulations! You have completed all tasks.");
+            }
+        }
 
 // btn-2
 document.getElementById('btn-2')
@@ -58,6 +76,7 @@ document.getElementById('btn-2')
             const mybtn = document.getElementById('btn-2');
             mybtn.setAttribute('disabled', true);
             mybtn.classList.add('bg-blue-200', "text-gray-300");
+            checkIfZero();
 })
 //btn-3
 document.getElementById('btn-3')
@@ -84,6 +103,7 @@ document.getElementById('btn-3')
             const mybtn = document.getElementById('btn-3');
             mybtn.setAttribute('disabled', true);
             mybtn.classList.add('bg-blue-200', "text-gray-300");
+            checkIfZero();
 })
 //btn-4
 document.getElementById('btn-4')
@@ -110,6 +130,7 @@ document.getElementById('btn-4')
             const mybtn = document.getElementById('btn-4');
             mybtn.setAttribute('disabled', true);
             mybtn.classList.add('bg-blue-200', "text-gray-300");
+            checkIfZero();
 })
 
 //btn-5
@@ -137,8 +158,8 @@ document.getElementById('btn-5')
             const mybtn = document.getElementById('btn-5');
             mybtn.setAttribute('disabled', true);
             mybtn.classList.add('bg-blue-200', "text-gray-300");
+            checkIfZero();
 })
-
 //btn-6
 document.getElementById('btn-6')
 .addEventListener('click', function(event){
@@ -164,14 +185,14 @@ document.getElementById('btn-6')
             const mybtn = document.getElementById('btn-6');
             mybtn.setAttribute('disabled', true);
             mybtn.classList.add('bg-blue-200', "text-gray-300");
-            alert('Congratulation !! you have completed all task');
+            checkIfZero();
+            
 })
 //btn-clear-history
 document.getElementById('btn-clear-history')
 .addEventListener('click', function(event){
     mycontainer.innerHTML = "";
 })
-
 // /new page
 document.getElementById("new-page")
 .addEventListener('click', function(){
@@ -187,3 +208,4 @@ button.addEventListener('click', function changeColor() {
     const color = randomColor;
     document.body.style.backgroundColor = `${color}`;
 });
+
