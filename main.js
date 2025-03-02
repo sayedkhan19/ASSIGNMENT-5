@@ -4,7 +4,7 @@ const currentDate = new Date();
 const formattedDate = currentDate.toDateString();
 dateContainer.textContent = formattedDate;
 const mycontainer = document.getElementById('container');
- 
+ //btn1
 document.getElementById('btn-1')
 .addEventListener('click', function(event){
     alert("Board update succssefully");
@@ -25,7 +25,7 @@ document.getElementById('btn-1')
             p.classList.add("bg-[#F4F7FF]", "py-2", "rounded-md","px-2");
             const now = new Date();
             const timeNow = now.toLocaleTimeString();
-            p.innerText = `You have Complete The Task Add Dark Mode at ${timeNow}`;
+            p.innerText = `You have Complete The Task Fix Mobile Button Issue at ${timeNow}`;
             mycontainer.appendChild(p);
             const mybtn = document.getElementById('btn-1');
             mybtn.setAttribute('disabled', true);
@@ -53,7 +53,7 @@ document.getElementById('btn-2')
             p.classList.add("bg-[#F4F7FF]", "py-2", "rounded-md","px-2");
             const now = new Date();
             const timeNow = now.toLocaleTimeString();
-            p.innerText = `You have Completed The Task Add pay success Modal at ${timeNow}`;
+            p.innerText = `You have Completed The Task Add Add Dark Mode at ${timeNow}`;
             mycontainer.appendChild(p);
             const mybtn = document.getElementById('btn-2');
             mybtn.setAttribute('disabled', true);
@@ -177,3 +177,12 @@ document.getElementById("new-page")
     window.location.href = "secondFile.html";
 })
 
+// body color chnage
+const colors = ['#e5051b', '#f6e06a', '#f1a432', '#a9b724', '#458a92', '#aa0c90', '#301196d'];
+const randomColor = colors[Math.floor(Math.random() * colors.length)];
+let button = document.getElementById('chnage-bg');
+button.addEventListener('click', function changeColor() {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    const color = randomColor;
+    document.body.style.backgroundColor = `${color}`;
+});
