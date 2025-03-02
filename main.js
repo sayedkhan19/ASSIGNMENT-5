@@ -164,6 +164,7 @@ document.getElementById('btn-6')
             const mybtn = document.getElementById('btn-6');
             mybtn.setAttribute('disabled', true);
             mybtn.classList.add('bg-blue-200', "text-gray-300");
+            alert('Congratulation !! you have completed all task');
 })
 //btn-clear-history
 document.getElementById('btn-clear-history')
