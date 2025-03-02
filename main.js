@@ -179,7 +179,7 @@ document.getElementById("new-page")
 })
 
 // body color chnage
-const colors = ['#e5051b', '#f6e06a', '#f1a432', '#a9b724', '#458a92', '#aa0c90', '#301196d'];
+const colors = ['#e5051b', '#f6e06a', '#f1a432', '#a9b724', '#458a92', '#aa0c90', '#301196d', '#f2b8a2', '#458a92', '#fdbb2f', '#27d193', '#702963',];
 const randomColor = colors[Math.floor(Math.random() * colors.length)];
 let button = document.getElementById('chnage-bg');
 button.addEventListener('click', function changeColor() {
